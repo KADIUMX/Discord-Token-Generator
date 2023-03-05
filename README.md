@@ -1,3 +1,3 @@
 # Discord-Token-Generator
 
-### DISCORD-TOKEN-GENERATOR
+## DISCORD-TOKEN-GENERATOR
